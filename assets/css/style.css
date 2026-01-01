@@ -1,0 +1,17 @@
+html body {
+    background: var(--token-796ee79d-fa4e-4408-bc78-57c89a70fe0d, rgb(21, 19, 18));
+}
+
+.section{
+  background:#000;
+}
+
+.header,
+.footer{
+  background:#0a0a0a;
+}
+
+.card{
+  background:#111;
+  border-radius:10px;
+}
