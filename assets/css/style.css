@@ -15,3 +15,65 @@ html body {
   background:#111;
   border-radius:10px;
 }
+
+.parallax {
+  /* The image used */
+  background-image: url('../images/black_image.jpg');
+
+  /* Set a specific height */
+  min-height: 700px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-content {
+  text-align: left;
+}
+.parallax .title {
+  color: white;
+  font-size: 90px;
+  font-weight: bold;
+  padding-left: 100px;
+  padding-top: 250px;
+}
+
+.parallax span {
+  color: #898989;
+  font-size: 90px;
+  font-weight: bold;
+  display: block;
+}
+
+.parallax .btn {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 28px;
+}
+
+.parallax .btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+} 
+
+.about-section {
+  background-color: #121212;
+  color: #fff;
+  padding: 50px 0;
+}
+.intro-about{
+  padding-top: 30px;
+}
+
+.intro-title{
+  font-size: 42;
+  font-weight: 800;
+  color: #fff;
+  text-align: right;
+}
