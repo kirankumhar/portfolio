@@ -77,3 +77,7 @@ html body {
   color: #fff;
   text-align: right;
 }
+
+.img-container img{
+  width: 100%;
+}
