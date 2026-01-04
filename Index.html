@@ -71,7 +71,7 @@
                             <div class="numb-ex">
                                 <span class="word dsn-active" data-dsn-animate="animate"><span class="dsn-wrapper"><span class="dsn-word-wrapper">6</span></span></span>
                             </div>
-                            <h4 class="dsn-active">YEARS OF <br> DIGITAL EXPERIENCE</h4>
+                            <h4 class="dsn-active">YEARS OF <br> WEB DEVELOPMENT EXPERIENCE</h4>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="services-item">
+                    <div class="services-item selected">
                         <div class="corner corner-top"></div>
                         <div class="corner corner-bottom"></div>
                         <div class="icon">
@@ -126,11 +126,11 @@
                         <div class="services-header">
                             <h3>WordPress Development</h3>
                         </div>
-                        <p>I create and customize WordPress websites, including themes, plugins, and content-managed sites that are easy to maintain and update.</p>
+                        <p>I create and customize WordPress websites, including themes, plugins, and content-managed sites that are easy to maintain and update</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="services-item selected">
+                    <div class="services-item">
                         <div class="corner corner-top"></div>
                         <div class="corner corner-bottom"></div>
                         <div class="icon">
@@ -161,6 +161,43 @@
             </div>
         </div>
     </section> -->
+
+    <div class="box-seat box-seat-full section-margin">
+        <div class="container-fluid">
+            <div class="inner-img" data-dsn-grid="moveUp">
+                <img data-dsn-scale="1" data-dsn-y="30%" src="assets/images/paralex.jpg" alt="" style="transform: translate(0%, 7.14977%) translate3d(0px, 0px, 0px) scale(1.2285, 1.2285);">
+            </div>
+            <div class="pro-text">
+                <h3> How is your<br> visual identity?</h3>
+                <p>A system that young people around the world with a club culture and techno
+                    enthusiasts feel identified. We generated a simple logo that is the basis for
+                    generating a geometric and liquid system. </p>
+                <div class="link-custom">
+                    <a class="image-zoom effect-ajax" href="project-2.html" style="transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <span>Learn More</span>
+                    <div class="icon-circle" style="transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"></div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="our-work work-under-header  section-margin" data-dsn-col="3">
+        <div class="container">
+            <div class="one-title">
+                <div class="title-sub-container">
+                    <p class="title-sub">Our Work</p>
+                </div>
+                <h2 class="title-main">Creative Portfolio Designs</h2>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                
+            </div>
+        </div>
+    </section>
+
 
     <section id="contact" class="section">
         <div class="container">
@@ -216,5 +253,42 @@
     <script src="assets/js/bootstrap_5.js"></script>
     <script src="assets/js/loader.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script>
+        const inner = document.querySelector(".inner");
+const section = document.querySelector("section");
+
+window.onscroll = function() {
+  let value = window.pageYOffset / section.offsetTop + 1;
+  inner.style.transform = `scale(${value})`;
+};
+
+
+$(function(){
+	
+	var $window = $(window);		//Window object
+	
+	var scrollTime = 1.2;			//Scroll time
+	var scrollDistance = 170;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
+		
+	$window.on("mousewheel DOMMouseScroll", function(event){
+		
+		event.preventDefault();	
+										
+		var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+		var scrollTop = $window.scrollTop();
+		var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+			
+		TweenMax.to($window, scrollTime, {
+			scrollTo : { y: finalScroll, autoKill:true },
+				ease: Power1.easeOut,	//For more easing functions see https://api.greensock.com/js/com/greensock/easing/package-detail.html
+				autoKill: true,
+				overwrite: 5							
+			});
+					
+	});
+	
+});
+    </script>
 </body>
 </html>
