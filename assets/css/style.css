@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     color: rgba(255, 255, 255, 0.69);
     font-family: "Montserrat", sans-serif;
 }
-.title-sub-container .title-sub {
+.title-sub {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 2px;
@@ -119,16 +119,120 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     padding-left: 80px;
 }
-.title-sub-container .title-sub:before{
-    left: 0;
-    width: 5px;
-    height: 5px;
-    background-color: #fff;
-    border-radius: 50%;
+
+.services-item .icon{
+  padding: 50px;
 }
-.title-sub-container .title-sub:after {
-    left: 15px;
-    height: 1px;
-    width: 52px;
-    background: rgba(233, 233, 233, 0.1);
+.services-item .icon img{
+  width: 25%;
 }
+
+.services-item p{
+  color: #898989;
+}
+.footer{
+      padding: 0 50px 30px;
+}
+
+.footer .copyright{
+  padding-top: 30px;
+  font-size: 14px;
+  letter-spacing: 2.67px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .copyright p{
+  color: rgba(194, 194, 194, 0.6);
+  margin-bottom: 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 1.6;
+  font-variant-numeric: proportional-nums;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer .footer-links{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.p-relative{
+  position: relative !important;
+}
+
+.footer-logo p{
+  color: #898989;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.footer-social{
+  margin-top: 20px;
+}
+
+.footer-social ul li{
+  display: inline-block;
+  list-style: none;
+  margin-right: 5px;
+}
+
+.footer-social ul li a{
+  position: relative;
+  color: #fff;
+  border-radius: 50%;
+  letter-spacing: 0;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.footer .footer-title{
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.footer .footer-title::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 15px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.footer .footer-block .col-contact p{
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer .footer-block .col-contact p strong{
+  color: #fff;
+}
+
+.footer .footer-block .col-contact p{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+footer a, footer p {
+    color: rgba(194, 194, 194, 0.6);
+    margin-bottom: 0;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 1.6;
+    font-variant-numeric: proportional-nums;
+    font-family: "Montserrat", sans-serif;
+}
+
