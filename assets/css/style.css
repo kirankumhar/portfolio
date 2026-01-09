@@ -40,6 +40,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .parallax-content {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 700px;
 }
 .parallax .title {
   color: white;
@@ -58,10 +62,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .parallax .btn {
   display: block;
-  margin: 30px auto;
+  margin: 0 auto 100px auto;
   padding: 10px 30px;
   font-size: 20px;
   border-radius: 28px;
+  align-self: flex-start;
+  margin-left: 100px;
 }
 
 .parallax .btn:hover {
@@ -312,4 +318,149 @@ footer a, footer p {
 
 .box-seat .pro-text h3 {
     font-size: 35px;
+}
+
+/* Projects Slider Styles */
+.projects-section {
+    background-color: #000;
+    padding-top: 120px;
+}
+
+.projects-slider-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 60px;
+}
+
+.projects-slider {
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.project-slide {
+    min-width: calc(33.333% - 14px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.project-card {
+    background: #0a0a0a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: #1a1a1a;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-info {
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.project-info p {
+    color: #898989;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.project-links {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-link {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-link:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+/* Slider Controls */
+.slider-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.slider-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.slider-btn:hover {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+.slider-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #fff;
+    width: 30px;
+    border-radius: 5px;
 }
