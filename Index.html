@@ -44,7 +44,8 @@
 
     <div class="parallax">
         <div class="parallax-content">
-            <h1 class="parallax title">SOFTWARE<span>ENGINEER</span></h1>
+            <h1 class="parallax title">LARAVEL & WORDPRESS<span>DEVELOPER</span></h1>
+            <p class="paralax-info">I build fast, secure, and scalable web applications</p>
             <button class="btn btn-outline-light hire-me">HIRE ME</button>
         </div>
     </div>
@@ -274,41 +275,5 @@
     <script src="assets/js/slider.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
-    <script>
-        const inner = document.querySelector(".inner");
-        const section = document.querySelector("section");
-
-        window.onscroll = function() {
-        let value = window.pageYOffset / section.offsetTop + 1;
-        inner.style.transform = `scale(${value})`;
-        };
-
-
-        $(function(){
-            
-            var $window = $(window);		//Window object
-            
-            var scrollTime = 1.2;			//Scroll time
-            var scrollDistance = 170;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
-                
-            $window.on("mousewheel DOMMouseScroll", function(event){
-                
-                event.preventDefault();	
-                                                
-                var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
-                var scrollTop = $window.scrollTop();
-                var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-                    
-                TweenMax.to($window, scrollTime, {
-                    scrollTo : { y: finalScroll, autoKill:true },
-                        ease: Power1.easeOut,	//For more easing functions see https://api.greensock.com/js/com/greensock/easing/package-detail.html
-                        autoKill: true,
-                        overwrite: 5							
-                    });
-                            
-            });
-            
-        });
-    </script>
 </body>
 </html>
