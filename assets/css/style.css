@@ -437,3 +437,13 @@ footer a, footer p {
   object-position: 15% 100%; 
 }
 
+.item-info h4{
+text-align: center;
+padding-top: 10px;
+}
+
+.title-main{
+  font-size: 40;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
